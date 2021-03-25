@@ -1,8 +1,9 @@
 #Include WinServ.ahk
-#noEnv
+#noEnv ; Recommended for performance and compatibility with future AutoHotkey releases.
 #persistent
 #singleInstance, force
-
+SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
+SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 DetectHiddenWindows On
 
